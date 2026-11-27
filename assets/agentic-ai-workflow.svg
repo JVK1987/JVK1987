@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">
   <title id="title">Agentic AI orchestration workflow</title>
-  <desc id="desc">An animated workflow showing a user request flowing to an orchestrator, then to planning, retrieval, tools, validation, and a human approval checkpoint before the final response.</desc>
+  <desc id="desc">Animated workflow: user request, orchestrator, planner, specialist agents, validation, human review, and final response.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101a33"/><stop offset="1" stop-color="#172b46"/></linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#36cfc9"/><stop offset="1" stop-color="#7c83ff"/></linearGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#6f91b7" stroke-width="1.2"/></marker>
     <style>
       .node{fill:#1d3555;stroke:#52749c;stroke-width:1.4}
@@ -13,11 +12,11 @@
       .label{font:600 15px Arial,sans-serif;fill:#f2f6ff;text-anchor:middle}
       .small{font:12px Arial,sans-serif;fill:#b8c9df;text-anchor:middle}
       .line{fill:none;stroke:#6f91b7;stroke-width:2;marker-end:url(#arrow)}
-      .pulse{fill:#8cf5e9;filter:url(#glow)}
       .dash{stroke-dasharray:7 9;animation:flow 2.3s linear infinite}
+      .pulse{fill:#8cf5e9;filter:url(#glow)}
       @keyframes flow{to{stroke-dashoffset:-32}}
       @keyframes blink{0%,100%{opacity:.35}50%{opacity:1}}
-      @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+      @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
       .orchestrator{transform-box:fill-box;transform-origin:center;animation:breathe 3s ease-in-out infinite}
       .dot1{animation:blink 1.8s ease-in-out infinite}
       .dot2{animation:blink 1.8s ease-in-out .4s infinite}
@@ -27,38 +26,25 @@
   <rect width="1000" height="390" rx="20" fill="url(#bg)"/>
   <text x="500" y="38" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#f2f6ff" text-anchor="middle">AGENTIC AI · PLAN → ACT → VERIFY → RESPOND</text>
   <text x="500" y="61" font-family="Arial,sans-serif" font-size="12" fill="#a9bdd5" text-anchor="middle">A governed multi-agent workflow with human oversight</text>
-
-  <path class="line dash" d="M145 170 H205"/>
-  <path class="line dash" d="M335 170 H395"/>
-  <path class="line dash" d="M525 170 H585"/>
-  <path class="line dash" d="M715 170 H775"/>
-  <path class="line" d="M460 205 V275 H645 V220"/>
-  <path class="line" d="M840 205 V275 H900 V220"/>
-
+  <path class="line dash" d="M145 170 H205"/><path class="line dash" d="M335 170 H395"/><path class="line dash" d="M525 170 H585"/><path class="line dash" d="M715 170 H775"/>
+  <path class="line" d="M460 205 V275 H645 V220"/><path class="line" d="M840 205 V275 H900 V220"/>
   <rect class="node" x="25" y="135" width="120" height="70" rx="13"/>
   <text class="label" x="85" y="165">User request</text><text class="small" x="85" y="185">Goal / context</text>
-
   <g class="orchestrator">
     <rect class="main" x="205" y="125" width="130" height="90" rx="15"/>
-    <text class="label" x="270" y="160">Orchestrator</text><text class="small" x="270" y="181">Route & coordinate</text>
+    <text class="label" x="270" y="160">Orchestrator</text><text class="small" x="270" y="181">Route &amp; coordinate</text>
     <circle class="pulse dot1" cx="247" cy="195" r="3"/><circle class="pulse dot2" cx="270" cy="195" r="3"/><circle class="pulse dot3" cx="293" cy="195" r="3"/>
   </g>
-
   <rect class="node" x="395" y="135" width="130" height="70" rx="13"/>
   <text class="label" x="460" y="165">Planner agent</text><text class="small" x="460" y="185">Break down task</text>
-
   <rect class="node" x="585" y="135" width="130" height="70" rx="13"/>
   <text class="label" x="650" y="165">Specialist agents</text><text class="small" x="650" y="185">RAG · tools · APIs</text>
-
   <rect class="node" x="775" y="135" width="130" height="70" rx="13"/>
   <text class="label" x="840" y="165">Validator</text><text class="small" x="840" y="185">Rules · guardrails</text>
-
   <rect class="human" x="580" y="275" width="130" height="65" rx="13"/>
   <text class="label" x="645" y="302">Human review</text><text class="small" x="645" y="321">Approve / escalate</text>
-
   <rect class="node" x="835" y="275" width="130" height="65" rx="13"/>
   <text class="label" x="900" y="302">Final response</text><text class="small" x="900" y="321">Auditable output</text>
-
   <text x="500" y="365" font-family="Arial,sans-serif" font-size="11" fill="#8fa8c4" text-anchor="middle">State · permissions · retries · traceability · human-in-the-loop</text>
   <circle class="pulse dot1" r="4"><animateMotion dur="3.8s" repeatCount="indefinite" path="M145 170 H205 H335 H395 H525 H585 H715 H775"/></circle>
   <circle class="pulse dot2" r="4"><animateMotion dur="4.5s" repeatCount="indefinite" path="M335 170 H395 H525 H585 H715 H775"/></circle>
