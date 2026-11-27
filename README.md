@@ -8,7 +8,7 @@ I build data- and AI-driven solutions, with a focus on applying machine learning
 - **Core focus:** Generative AI, Retrieval-Augmented Generation (RAG), NLP, machine learning, and AI-enabled workflow automation
 - **Engineering:** Python, SQL, REST APIs, FastAPI, cloud-based application integration
 - **Cloud & data:** Google Cloud (Cloud Run, Pub/Sub, Cloud SQL), Azure, PostgreSQL
-- **Domains:** Life sciences / healthcare, retail, telecom, oil & gas, and digital marketing
+- **Domains:** Life sciences / healthcare, Retail, Telecom, Oil & gas, and Digital marketing
 
 I value solutions that are grounded in reliable data, measurable through evaluation, and designed with validation, guardrails, observability, and human review where needed.
 
