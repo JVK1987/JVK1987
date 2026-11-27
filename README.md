@@ -5,7 +5,7 @@
 I build data- and AI-driven solutions, with a focus on applying machine learning and modern generative AI patterns to practical enterprise problems.
 
 <p align="center">
-  <img src="assets/agentic-ai-workflow.svg" alt="Animated Agentic AI workflow: orchestrator coordinates planner and specialist agents, validation, human review, and final response" width="100%" />
+  <img src="https://raw.githubusercontent.com/JVK1987/JVK1987/main/assets/agentic-ai-workflow.svg" alt="Animated Agentic AI workflow: orchestrator coordinates planner and specialist agents, validation, human review, and final response" width="100%" />
 </p>
 
 <p align="center">
