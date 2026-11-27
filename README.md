@@ -4,13 +4,32 @@
 
 I build data- and AI-driven solutions, with a focus on applying machine learning and modern generative AI patterns to practical enterprise problems.
 
+<p align="center">
+  <img src="assets/agentic-ai-workflow.svg" alt="Animated Agentic AI workflow: orchestrator coordinates planner and specialist agents, validation, human review, and final response" width="100%" />
+</p>
+
+<p align="center">
+  <b>PLAN</b> &nbsp;→&nbsp; <b>ORCHESTRATE</b> &nbsp;→&nbsp; <b>ACT</b> &nbsp;→&nbsp; <b>VERIFY</b> &nbsp;→&nbsp; <b>HUMAN APPROVAL</b>
+</p>
+
 - **Experience:** 14+ years across IT, data science, and AI/ML
 - **Core focus:** Generative AI, Retrieval-Augmented Generation (RAG), NLP, machine learning, and AI-enabled workflow automation
 - **Engineering:** Python, SQL, REST APIs, FastAPI, cloud-based application integration
 - **Cloud & data:** Google Cloud (Cloud Run, Pub/Sub, Cloud SQL), Azure, PostgreSQL
-- **Domains:** Life sciences / healthcare, Retail, Telecom, Oil & gas, and Digital marketing
+- **Domains:** Life sciences / healthcare, retail, telecom, oil & gas, and digital marketing
 
 I value solutions that are grounded in reliable data, measurable through evaluation, and designed with validation, guardrails, observability, and human review where needed.
+
+## Agentic AI Architecture
+
+An agentic system is more than a chatbot: it coordinates specialized capabilities to complete a goal, while controlling tool access and validating outputs.
+
+- **Orchestrator:** routes tasks, manages state, and coordinates agents
+- **Planner:** decomposes a goal into executable steps
+- **Specialist agents:** retrieve knowledge, call approved tools/APIs, and perform focused tasks
+- **Validator:** checks schemas, business rules, grounding, and policy constraints
+- **Human-in-the-loop:** reviews exceptions and high-impact decisions
+- **Observability:** traces decisions, tool calls, retries, and outcomes
 
 ## Areas of Focus
 
